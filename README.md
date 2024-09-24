@@ -9,6 +9,11 @@ and can be used on unseen text prompts. The loss function is minimizing the dist
 ### CLIP-Guided Diffusion
 This architecture is essentially a U-Net based on a Wide ResNet framework, with the substitution of group normalization for weight normalization to streamline implementation. Each model consists of two convolutional residual blocks per resolution level. Additionally, multi-head self-attention blocks are incorporated at the 16×16 and 8×8 resolution levels, positioned between the convolutional blocks. 
 
+### Dataset
+We have chosen the Old Book Illustrations dataset from Hugging Face. This dataset contains 4172 illustrations scanned from literature of 19-20th centuries and related metadata such as image title, book title, image description, image caption, illustration format and subject.
+
+![Fairytale Pipeline](dataset.jpg)
+
 ### Pipeline for the fairytale project:
 
 ![Fairytale Pipeline](fairytale_pipeline.png)
