@@ -9,14 +9,16 @@ and can be used on unseen text prompts. The loss function is minimizing the dist
 ### CLIP-Guided Diffusion
 This architecture is essentially a U-Net based on a Wide ResNet framework, with the substitution of group normalization for weight normalization to streamline implementation. Each model consists of two convolutional residual blocks per resolution level. Additionally, multi-head self-attention blocks are incorporated at the 16×16 and 8×8 resolution levels, positioned between the convolutional blocks. 
 
-Here is the pipeline for the fairytale project:
+### Pipeline for the fairytale project:
 
 ![Fairytale Pipeline](fairytale_pipeline.png)
 
-Output of our model:
+### Output of our model:
+
+Prompt: "Little Red Riding Hood with her bright red hood and innocent face wanders through the dark and eerie woods unaware of the danger lurking nearb"
 
 ![Fairytale Pipeline](gen.png)
-
+![Fairytale Pipeline](diffusion_model_output.jpg)
 ### Install dependencies. 
 
 #### conda
