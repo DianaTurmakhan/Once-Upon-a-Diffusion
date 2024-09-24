@@ -21,7 +21,6 @@ Prompt: "Little Red Riding Hood with her bright red hood and innocent face wande
 ![Fairytale Pipeline](diffusion_model_output.jpg)
 ### Install dependencies. 
 
-#### conda
 ```bash
 conda create -n ff_vqgan_clip_env python=3.8
 conda activate ff_vqgan_clip_env
@@ -29,6 +28,17 @@ conda activate ff_vqgan_clip_env
 (ff_vqgan_clip_env) conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia
 (ff_vqgan_clip_env) pip install -r requirements.txt
 ```
+
+### Train
+
+Modify `configs/example.yaml` as needed.  
+
+```
+$ (ff_vqgan_clip_venv) python main.py train configs/example.yaml
+```
+
+### Test
+`python -u main.py test cc12m_32x1024_vitgan.th "Prompt"`
 
 # Acknowledgements
 - Thanks to VitGAN authors, the VitGAN model is from <https://github.com/wilile26811249/ViTGAN>
