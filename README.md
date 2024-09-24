@@ -38,7 +38,9 @@ $ (ff_vqgan_clip_venv) python main.py train configs/example.yaml
 ```
 
 ### Test
+```
 `python -u main.py test cc12m_32x1024_vitgan.th "Prompt"`
+```
 
 # Acknowledgements
 - Thanks to VitGAN authors, the VitGAN model is from <https://github.com/wilile26811249/ViTGAN>
